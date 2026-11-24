@@ -5,7 +5,9 @@
 - [Pratique : Projet fil rouge (mini CMS headless)](#pratique--projet-fil-rouge-mini-cms-headless)
   - [Spécifications](#spécifications)
   - [Module 01](#module-01)
-    - [Qualité](#qualité)
+    - [Partie 1 : *Vanilla* PHP](#partie-1--vanilla-php)
+    - [Partie 2 : migration vers du PHP *moderne* avec Autoloading et Composer](#partie-2--migration-vers-du-php-moderne-avec-autoloading-et-composer)
+    - [Partie 3 : Qualité](#partie-3--qualité)
       - [Appliquer les *coding standards* de Symfony](#appliquer-les-coding-standards-de-symfony)
       - [Utiliser le linter (analyseur statique) phpStan](#utiliser-le-linter-analyseur-statique-phpstan)
       - [Générer la documentation](#générer-la-documentation)
@@ -21,6 +23,8 @@
 > Nous transformerons ce site en *service* web (API) au cours de la formation.
 
 ## Module 01
+
+### Partie 1 : *Vanilla* PHP
 
 1. **Préparer** le projet avec la structure suivante :
 
@@ -98,7 +102,9 @@ Pour trier les posts, **trouver** la fonction primitive PHP la plus adaptée [pa
 
 > [Accéder à/Télécharger une proposition commentée](https://github.com/paul-schuhm/eni-service-symfony-services-web/tree/main/demos/composer-autoloading/cms_sans_autoloading)
 
-4. **Refactoriser** le projet réalisé précédemment `demo_autoloading` afin qu'il utilise **l'*autoloading* PSR-4 et le gestionnaire de dépendances Composer** :
+### Partie 2 : migration vers du PHP *moderne* avec Autoloading et Composer
+
+1. **Refactoriser** le projet afin qu'il utilise **l'*autoloading* PSR-4 et le gestionnaire de dépendances Composer** :
    1. Initialiser le projet avec `composer init`;
    2. **Appliquer les modifications nécessaires** (retirer les `require`);
    3. Déplacer le fichier `congig.php` dans `src` pour qu'il soit chargé automatiquement;
@@ -121,11 +127,11 @@ Voici la structure finale du projet :
 └── vendor
 ~~~
 
-5. **Installer** [le composant var_dumper](https://symfony.com/doc/current/components/var_dumper.html)
-6. L'**utiliser** dans `index.php` pour afficher la collection de posts.
-7. **Créer** un fichier `.gitignore` correcte pour versionner le projet.
+2. **Installer** [le composant var_dumper](https://symfony.com/doc/current/components/var_dumper.html)
+3. L'**utiliser** dans `index.php` pour afficher la collection de posts.
+4. **Créer** un fichier `.gitignore` correcte pour versionner le projet.
 
-### Qualité
+### Partie 3 : Qualité
 
 #### Appliquer les *coding standards* de Symfony
 
