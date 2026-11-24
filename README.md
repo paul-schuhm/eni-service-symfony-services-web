@@ -1,12 +1,18 @@
 # Symfony, développer des services Back-End
 
 - [Symfony, développer des services Back-End](#symfony-développer-des-services-back-end)
+  - [Module 01 : PHP, POO, autoloading avec Composer/PSR-4](#module-01--php-poo-autoloading-avec-composerpsr-4)
   - [Bibliographie](#bibliographie)
     - [Sur le web/Veille](#sur-le-webveille)
     - [Ouvrages](#ouvrages)
       - [PHP/Symfony](#phpsymfony)
       - [Services web/Restful](#services-webrestful)
     - [Conférences](#conférences)
+
+## Module 01 : PHP, POO, autoloading avec Composer/PSR-4
+
+- [Accéder à des démos sur la POO](demos/poo/)
+- [Accéder au tp fil rouge (cms headless) sur l'autoloading](demos/composer-autoloading/) et l'usage des outils de qualité de code (avant et après)
 
 ## Bibliographie
 
