@@ -7,9 +7,9 @@
   - [Module 01](#module-01)
     - [Partie 1 : *Vanilla* PHP](#partie-1--vanilla-php)
     - [Partie 2 : migration vers du PHP *moderne* avec Autoloading et Composer](#partie-2--migration-vers-du-php-moderne-avec-autoloading-et-composer)
-    - [Partie 3 : Qualité](#partie-3--qualité)
+    - [Partie 3 : Qualité et tests](#partie-3--qualité-et-tests)
       - [Appliquer les *coding standards* de Symfony](#appliquer-les-coding-standards-de-symfony)
-      - [Utiliser le linter (analyseur statique) phpStan](#utiliser-le-linter-analyseur-statique-phpstan)
+      - [Utiliser le Linter/Analyseur statique phpStan](#utiliser-le-linteranalyseur-statique-phpstan)
       - [Générer la documentation](#générer-la-documentation)
       - [Tests](#tests)
   - [Module 02](#module-02)
@@ -131,7 +131,7 @@ Voici la structure finale du projet :
 3. L'**utiliser** dans `index.php` pour afficher la collection de posts.
 4. **Créer** un fichier `.gitignore` correcte pour versionner le projet.
 
-### Partie 3 : Qualité
+### Partie 3 : Qualité et tests
 
 #### Appliquer les *coding standards* de Symfony
 
@@ -150,9 +150,12 @@ phpcbf --standard=PSR12 src
 1. **Corriger** les autres manuellement.
 2. **Vérifier** jusqu'à ce que `phpcs` retourne un code égal à 0 (aucune erreur) : `echo $?`
 
-#### Utiliser le linter (analyseur statique) phpStan
+#### Utiliser le Linter/Analyseur statique phpStan
 
-<!-- A compléter -->
+~~~bash
+./vendor/bin/phpstan analyze -l8 src
+echo $?
+~~~
 
 #### Générer la documentation
 
@@ -199,7 +202,6 @@ final class PostTest extends TestCase
 ./vendor/bin/phpunit --testdox tests
 echo $?
 ~~~
-
 
 ## Module 02
 
