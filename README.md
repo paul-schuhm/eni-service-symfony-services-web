@@ -1,6 +1,7 @@
 # Symfony, développer des services Back-End
 
 - [Symfony, développer des services Back-End](#symfony-développer-des-services-back-end)
+  - [Projet fil rouge](#projet-fil-rouge)
   - [Module 01 : PHP, POO, autoloading avec Composer/PSR-4](#module-01--php-poo-autoloading-avec-composerpsr-4)
   - [Bibliographie](#bibliographie)
     - [Sur le web/Veille](#sur-le-webveille)
@@ -9,10 +10,14 @@
       - [Services web/Restful](#services-webrestful)
     - [Conférences](#conférences)
 
+## Projet fil rouge
+
+[Accéder au projet fil rouge (spécifications, guide)](projet-fil-rouge.md)
+
 ## Module 01 : PHP, POO, autoloading avec Composer/PSR-4
 
 - [Accéder à des démos sur la POO](demos/poo/)
-- [Accéder au tp fil rouge (cms headless) sur l'autoloading](demos/composer-autoloading/) et l'usage des outils de qualité de code (avant et après)
+- [Projet fil rouge : implémentation *vanilla* PHP sans et avec l'autoloading](demos/composer-autoloading/) et l'usage des outils de qualité de code
 
 ## Bibliographie
 
