@@ -1,17 +1,23 @@
 {
-    "name": "paul/client_api_guzzle",
-    "autoload": {
-        "psr-4": {
-            "Paul\\ClientApiGuzzle\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "paul schuhmacher",
-            "email": "contact@pschuhmacher.com"
-        }
-    ],
-    "require": {
-        "guzzlehttp/guzzle": "^8.6"
+  "name": "paul/client_api_guzzle",
+  "autoload": {
+    "psr-4": {
+      "Paul\\ClientApiGuzzle\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "paul schuhmacher",
+      "email": "contact@pschuhmacher.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^8.6"
+  },
+  "scripts": {
+    "request-api": [
+      "php index.php"
+    ]
+  }
+
 }
