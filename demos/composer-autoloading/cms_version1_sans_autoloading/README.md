@@ -47,4 +47,4 @@ Avec la stratégie d'*autoloading*, **tout ce code manuel** et ces **problémati
 
 Le système va savoir **automatiquement** où **trouver** le fichier `User.php`, et nous n'aurons plus à faire de `require_once` manuel.
 
-C'est le but de [la démo suivante.]()
+C'est le but de [la démo suivante.](https://github.com/paul-schuhm/eni-service-symfony-services-web/tree/main/demos/composer-autoloading/cms_version2_avec_autoloading)
