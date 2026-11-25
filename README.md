@@ -17,9 +17,11 @@
 ## Module 01 : PHP, POO, autoloading avec Composer/PSR-4
 
 - [Accéder à des démos sur la POO](demos/poo/)
-- [Projet fil rouge : implémentation *vanilla* PHP sans et avec l'autoloading](demos/composer-autoloading/) et l'usage des outils de qualité de code
+- [Parties 1, 2 et 3 : implémentation *vanilla* PHP sans et avec l'autoloading](demos/composer-autoloading/) et l'usage des outils de qualité de code
 
 ## Bibliographie
+
+<!-- A compléter... -->
 
 ### Sur le web/Veille
 

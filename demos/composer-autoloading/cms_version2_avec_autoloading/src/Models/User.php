@@ -2,7 +2,9 @@
 
 namespace Ps\App\Models;
 
-class User
+use JsonSerializable; // import de la classe globale (@see https://www.php.net/manual/en/class.jsonserializable.php)
+
+class User implements JsonSerializable
 {
     private static int $last_id = 1;
 
@@ -18,5 +20,14 @@ class User
     ) {
         $this->id = $id ?? self::$last_id;
         self::$last_id++;
+    }
+    
+    public function jsonSerialize(): array
+    {
+        return [
+            'id'        => $this->id,
+            'firstName' => $this->firstName,
+            'lastName'  => $this->lastName,
+        ];
     }
 }

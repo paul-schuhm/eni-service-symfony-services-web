@@ -1,7 +1,8 @@
-# Pratique : Mini site web pour pratique les fondamentaux de PHP, AVEC AUTOLOADING
+# Pratique : Mini service web pour pratiquer les fondamentaux de PHP, AVEC AUTOLOADING
 
-- [Pratique : Mini site web pour pratique les fondamentaux de PHP, AVEC AUTOLOADING](#pratique--mini-site-web-pour-pratique-les-fondamentaux-de-php-avec-autoloading)
+- [Pratique : Mini service web pour pratiquer les fondamentaux de PHP, AVEC AUTOLOADING](#pratique--mini-service-web-pour-pratiquer-les-fondamentaux-de-php-avec-autoloading)
   - [Description](#description)
+  - [Remarques](#remarques)
   - [Lancer la démo](#lancer-la-démo)
   - [Tooling](#tooling)
     - [Formateur](#formateur)
@@ -13,13 +14,19 @@
 
 ## Description
 
-Un petit projet de site web affichant une liste de publications et des informations sur leurs auteurs. Cette démo utilise :
+Un petit projet de service web fournissant une liste de publications et des informations sur leurs auteurs. Cette démo propose et utilise :
 
-- **composer et l'autoloading PSR-4**;
-- le **formatteur** PHP_CodeSniffer (phpcs et phpcbf) avec les codings standard PSR12;
+- une pagination des résultats (important sur une ressource *collection*, nous y reviendrons) et une gestion des exceptions;
+- une implémentation minimale du protocole HTTP (header et code status)
+- **Composer et l'autoloading PSR-4**;
+- le **formateur** PHP_CodeSniffer (phpcs et phpcbf) avec les codings standard PSR12;
 - l'**analyseur statique** phpStan;
 - des tests unitaires avec PHPUnit;
-- les *docblocks* et PHP Documentor pour générer sa doc de référence.
+- les *Docblocks* et PHP Documentor pour générer sa doc de référence.
+
+## Remarques
+
+Le format du message retourné par le service laisse encore à désirer et semble construit de manière un peu arbitraire. Nous y reviendrons quand nous aborderons le design de services *RESTful*.
 
 ## Lancer la démo
 
@@ -29,7 +36,7 @@ php -S localhost:5001 -t demo_autoloading
 ~~~
 
 ~~~bash
-curl localhost:5001
+curl localhost:5001 | jq
 ~~~
 
 ## Tooling
