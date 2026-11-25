@@ -16,15 +16,16 @@
 
 ## Module 01 : PHP, POO, autoloading avec Composer/PSR-4
 
-- [Accéder à des démos sur la POO](demos/poo/)
+- [Accéder à des démos ciblées sur la POO en PHP](demos/poo/)
 - [Parties 1, 2 et 3 : implémentation *vanilla* PHP sans et avec l'autoloading](demos/composer-autoloading/) et l'usage des outils de qualité de code
 
 ## Bibliographie
 
 <!-- A compléter... -->
 
-### Sur le web/Veille
+### Sur le web et veille
 
+- [Symfony Docs](https://symfony.com/doc/current/index.html): *What else ?*
 - [Blog de Fabien Potencier](https://fabien.potencier.org/);
 
 ### Ouvrages
